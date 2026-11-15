@@ -9,7 +9,6 @@ import {
   MissionOverviewPage,
   MissionDataManagementPage,
 } from '../modules/mission-continuity/index.js';
-import { ResearchEvidencePage } from '../modules/research-evidence/index.js';
 import {
   Activity,
   Cpu,
@@ -17,7 +16,6 @@ import {
   Database,
   Network,
   Compass,
-  BookOpen,
   Stethoscope,
   LayoutDashboard,
   ServerCog,
@@ -44,9 +42,6 @@ export default function App() {
       case 'mdse':
       case 'decision':
         return 'decision';
-      case 'nre':
-      case 'research':
-        return 'research';
       case 'management':
         return 'management';
       default:
@@ -89,7 +84,7 @@ export default function App() {
             </div>
           </div>
 
-          {/* Main Navigation (8 Sections) */}
+          {/* Main Navigation (7 Sections) */}
           <div className="flex flex-wrap items-center gap-1.5 bg-slate-950 p-1 rounded-lg border border-slate-800">
             <button
               type="button"
@@ -171,19 +166,6 @@ export default function App() {
 
             <button
               type="button"
-              onClick={() => setActiveModule('research')}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded text-xs font-mono font-medium transition ${
-                activeModule === 'research'
-                  ? 'bg-cyan-950 border border-cyan-500 text-cyan-300 shadow'
-                  : 'text-slate-400 hover:text-slate-200'
-              }`}
-            >
-              <BookOpen className="w-3.5 h-3.5" />
-              7. Research &amp; Evidence
-            </button>
-
-            <button
-              type="button"
               onClick={() => setActiveModule('management')}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded text-xs font-mono font-medium transition ${
                 activeModule === 'management'
@@ -192,7 +174,7 @@ export default function App() {
               }`}
             >
               <ServerCog className="w-3.5 h-3.5" />
-              8. Mission Data Management
+              7. Mission Data Management
             </button>
           </div>
         </div>
@@ -212,8 +194,7 @@ export default function App() {
                 {activeModule === 'patterns' && 'Section 04: Multi-Indicator Health Pattern Detection Engine (MHPDE)'}
                 {activeModule === 'context' && 'Section 05: Mission Context Engine (MCE)'}
                 {activeModule === 'decision' && 'Section 06: Medical Decision Support Engine (MDSE)'}
-                {activeModule === 'research' && 'Section 07: NASA Research, Hazards & Standard Measures Layer (HRP & OSDR)'}
-                {activeModule === 'management' && 'Section 08: Mission Continuity, Storage & Synchronization Engine (MCSI)'}
+                {activeModule === 'management' && 'Section 07: Mission Continuity, Storage & Synchronization Engine (MCSI)'}
               </div>
               <div className="text-slate-400 text-[11px] mt-0.5">
                 {activeModule === 'overview' && 'Integrated operational view combining active baselines, multi-indicator patterns, clinical guidance, and storage metrics.'}
@@ -222,7 +203,6 @@ export default function App() {
                 {activeModule === 'patterns' && 'Evaluates multi-indicator combinations against personal baselines and mission events across 5 independent domains.'}
                 {activeModule === 'context' && 'Correlates mission activities, exercise protocols, sleep cycles, and cabin environmental conditions without asserting causation.'}
                 {activeModule === 'decision' && 'Autonomous clinical protocol decision support derived from NASA spaceflight clinical practice guidelines.'}
-                {activeModule === 'research' && 'Connects five spaceflight hazards, HRP risks, NASA Spaceflight Standard Measures, and verified OSDR telemetry with strict provenance.'}
                 {activeModule === 'management' && 'Offline-first IndexedDB audit, pending sync queue management, validation rejection logs, and storage telemetry.'}
               </div>
             </div>
@@ -239,7 +219,6 @@ export default function App() {
               {activeModule === 'patterns' && 'Software States'}
               {activeModule === 'context' && 'Contextual Non-Causality'}
               {activeModule === 'decision' && 'Clinical Protocol Rules'}
-              {activeModule === 'research' && 'HRP Hazards & Standard Measures'}
               {activeModule === 'management' && 'Atomic Sync Queue'}
             </span>
           </div>
@@ -279,12 +258,6 @@ export default function App() {
         {activeModule === 'decision' && (
           <section>
             <MedicalDecisionSupportPage />
-          </section>
-        )}
-
-        {activeModule === 'research' && (
-          <section>
-            <ResearchEvidencePage />
           </section>
         )}
 

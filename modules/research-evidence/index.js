@@ -3,7 +3,6 @@ export * from './services/evidenceRegistryService.js';
 export * from './services/osdrDatasetService.js';
 export * from './services/datasetImportPipeline.js';
 
-export { ResearchEvidencePage } from './ResearchEvidencePage.jsx';
 export { FiveHazardsOverview } from './components/FiveHazardsOverview.jsx';
 export { HealthIndicatorMapping } from './components/HealthIndicatorMapping.jsx';
 export { ResearchEvidenceBrowser } from './components/ResearchEvidenceBrowser.jsx';
