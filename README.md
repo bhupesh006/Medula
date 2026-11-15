@@ -64,43 +64,6 @@ Test Files  14 passed (14)
      Tests  116 passed (116)
 ```
 
----
 
-## 📦 Local Development
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/bhupesh006/Medula.git
-   cd Medula
-   ```
 
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server**:
-   ```bash
-   npm run dev
-   ```
-
-4. **Build for production**:
-   ```bash
-   npm run build
-   ```
-
----
-
-## 🛰️ GitHub Pages Deployment
-
-This repository includes a GitHub Actions workflow that automatically builds, tests, and deploys the application to GitHub Pages upon pushing to `main` or `master`.
-
-1. Go to **Settings > Pages** in your GitHub repository.
-2. Under **Build and deployment > Source**, select **GitHub Actions**.
-3. Any push to `main` will automatically deploy the site.
-
----
-
-## ⚖️ Scientific Provenance & Disclaimer
-
-MEDULA is an independent autonomous medical intelligence prototype designed for spaceflight human research and autonomous exploration operational concepts. All synthetic demonstration records are strictly flagged with `isSynthetic: true` and demarcated from verified NASA research datasets. This system does not replace certified flight surgeons or provide automated prescription generation.
