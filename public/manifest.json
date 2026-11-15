@@ -1,0 +1,18 @@
+{
+  "short_name": "MEDULA",
+  "name": "MEDULA — Autonomous Astronaut Health Intelligence",
+  "description": "Offline-First Astronaut Health Intelligence System for Long-Duration Space Missions",
+  "icons": [
+    {
+      "src": "./vite.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "./",
+  "background_color": "#060B14",
+  "theme_color": "#0C1527",
+  "display": "standalone",
+  "orientation": "any",
+  "scope": "./"
+}

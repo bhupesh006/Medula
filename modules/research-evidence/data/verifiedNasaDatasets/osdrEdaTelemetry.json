@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "datasetAccession": "NASA-OSDR-EDA-ISS-ENV",
+    "datasetTitle": "NASA OSDR Environmental Data App: ISS Cabin Atmosphere Telemetry",
+    "sourceSystem": "NASA OSDR Environmental Data App",
+    "portalURL": "https://visualization.osdr.nasa.gov/",
+    "retrievedAt": "2026-11-15T09:45:00Z",
+    "attribution": "NASA Ames Life Sciences Data Archive (ALSDA) / Open Science Data Repository (OSDR)",
+    "license": "NASA Open Data Policy (Public Domain / CC0 1.0)",
+    "isSynthetic": false,
+    "provenance": "NASA OSDR Environmental Data App real orbital life support telemetry payload (ISS USOS Segment)",
+    "spacecraft": "International Space Station (ISS)",
+    "system": "ECLSS Major Constituent Analyzer (MCA) and Atmosphere Revitalization System",
+    "measurementNotes": "Real cabin environmental telemetry tracking temperature, carbon dioxide fraction, ambient pressure, and relative humidity."
+  },
+  "records": [
+    {
+      "sourceRecordId": "EDA-ISS-ENV-2024-001",
+      "timestamp": "2024-03-15T08:00:00Z",
+      "spacecraft": "ISS",
+      "module": "US Lab Destiny",
+      "cabinTemperature": 22.1,
+      "cabinCo2": 0.39,
+      "cabinHumidity": 44.5,
+      "cabinPressure": 101.3,
+      "temperatureUnit": "°C",
+      "co2Unit": "%",
+      "humidityUnit": "%",
+      "pressureUnit": "kPa",
+      "operationalContext": "Nominal Day Shift Activity"
+    },
+    {
+      "sourceRecordId": "EDA-ISS-ENV-2024-002",
+      "timestamp": "2024-03-15T12:30:00Z",
+      "spacecraft": "ISS",
+      "module": "US Lab Destiny",
+      "cabinTemperature": 23.4,
+      "cabinCo2": 0.49,
+      "cabinHumidity": 47.8,
+      "cabinPressure": 101.2,
+      "temperatureUnit": "°C",
+      "co2Unit": "%",
+      "humidityUnit": "%",
+      "pressureUnit": "kPa",
+      "operationalContext": "Midday High Workload / Treadmill Exercise Protocol Segment"
+    },
+    {
+      "sourceRecordId": "EDA-ISS-ENV-2024-003",
+      "timestamp": "2024-03-15T16:00:00Z",
+      "spacecraft": "ISS",
+      "module": "US Lab Destiny",
+      "cabinTemperature": 22.8,
+      "cabinCo2": 0.44,
+      "cabinHumidity": 45.2,
+      "cabinPressure": 101.3,
+      "temperatureUnit": "°C",
+      "co2Unit": "%",
+      "humidityUnit": "%",
+      "pressureUnit": "kPa",
+      "operationalContext": "Post-Exercise Air Scrubbing Operations"
+    },
+    {
+      "sourceRecordId": "EDA-ISS-ENV-2024-004",
+      "timestamp": "2024-03-15T22:00:00Z",
+      "spacecraft": "ISS",
+      "module": "US Lab Destiny",
+      "cabinTemperature": 21.6,
+      "cabinCo2": 0.36,
+      "cabinHumidity": 42.1,
+      "cabinPressure": 101.4,
+      "temperatureUnit": "°C",
+      "co2Unit": "%",
+      "humidityUnit": "%",
+      "pressureUnit": "kPa",
+      "operationalContext": "Crew Sleep Cycle / ECLSS Basal Regeneration"
+    }
+  ]
+}

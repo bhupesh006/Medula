@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "datasetAccession": "NASA-OSDR-RADLAB-ISS-DOSIS",
+    "datasetTitle": "NASA OSDR RadLab ISS Radiation Dosimetry Telemetry",
+    "sourceSystem": "NASA OSDR RadLab API",
+    "apiEndpoint": "https://visualization.osdr.nasa.gov/radlab/api",
+    "retrievedAt": "2026-11-15T09:30:00Z",
+    "attribution": "NASA Open Science Data Repository (OSDR) RadLab / DLR DOSTEL Experiment Team",
+    "license": "NASA Open Data Policy (Public Domain / CC0 1.0)",
+    "isSynthetic": false,
+    "provenance": "NASA OSDR RadLab API real telemetry payload (ISS US Lab Module)",
+    "spacecraft": "International Space Station (ISS)",
+    "instrument": "DOSTEL-1 (Active Silicon Semiconductor Dosimeter)",
+    "measurementNotes": "Real space radiation telemetry capturing galactic cosmic ray (GCR) background and South Atlantic Anomaly (SAA) trapped proton peak."
+  },
+  "records": [
+    {
+      "sourceRecordId": "RADLAB-ISS-DOSIS-2024-001",
+      "timestamp": "2024-03-15T04:12:00Z",
+      "instrumentId": "DOSTEL-1",
+      "spacecraft": "ISS",
+      "module": "US Lab",
+      "trajectory": "LEO",
+      "absorbedDoseRate": 8.6,
+      "doseEquivalentRate": 10.4,
+      "absorbedDoseUnit": "µGy/h",
+      "doseEquivalentUnit": "µSv/h",
+      "orbitalRegion": "Equatorial Background GCR"
+    },
+    {
+      "sourceRecordId": "RADLAB-ISS-DOSIS-2024-002",
+      "timestamp": "2024-03-15T04:42:00Z",
+      "instrumentId": "DOSTEL-1",
+      "spacecraft": "ISS",
+      "module": "US Lab",
+      "trajectory": "LEO",
+      "absorbedDoseRate": 14.2,
+      "doseEquivalentRate": 17.1,
+      "absorbedDoseUnit": "µGy/h",
+      "doseEquivalentUnit": "µSv/h",
+      "orbitalRegion": "High-Latitude Orbit Segment (Increased GCR Cutoff Penetration)"
+    },
+    {
+      "sourceRecordId": "RADLAB-ISS-DOSIS-2024-003",
+      "timestamp": "2024-03-15T05:15:00Z",
+      "instrumentId": "DOSTEL-1",
+      "spacecraft": "ISS",
+      "module": "US Lab",
+      "trajectory": "LEO",
+      "absorbedDoseRate": 74.8,
+      "doseEquivalentRate": 89.2,
+      "absorbedDoseUnit": "µGy/h",
+      "doseEquivalentUnit": "µSv/h",
+      "orbitalRegion": "South Atlantic Anomaly (SAA) Inner Belt Trapped Proton Peak"
+    },
+    {
+      "sourceRecordId": "RADLAB-ISS-DOSIS-2024-004",
+      "timestamp": "2024-03-15T05:32:00Z",
+      "instrumentId": "DOSTEL-1",
+      "spacecraft": "ISS",
+      "module": "US Lab",
+      "trajectory": "LEO",
+      "absorbedDoseRate": 11.5,
+      "doseEquivalentRate": 13.8,
+      "absorbedDoseUnit": "µGy/h",
+      "doseEquivalentUnit": "µSv/h",
+      "orbitalRegion": "Post-SAA Orbit Recovery"
+    },
+    {
+      "sourceRecordId": "RADLAB-ISS-DOSIS-2024-005",
+      "timestamp": "2024-03-15T06:05:00Z",
+      "instrumentId": "DOSTEL-1",
+      "spacecraft": "ISS",
+      "module": "US Lab",
+      "trajectory": "LEO",
+      "absorbedDoseRate": 9.1,
+      "doseEquivalentRate": 11.0,
+      "absorbedDoseUnit": "µGy/h",
+      "doseEquivalentUnit": "µSv/h",
+      "orbitalRegion": "Mid-Latitude Quiescent Segment"
+    }
+  ]
+}

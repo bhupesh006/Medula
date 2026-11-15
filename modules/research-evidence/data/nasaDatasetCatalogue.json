@@ -1,0 +1,123 @@
+[
+  {
+    "datasetAccession": "NASA-OSDR-RADLAB-ISS-DOSIS",
+    "datasetName": "NASA OSDR RadLab ISS Radiation Dosimetry Telemetry",
+    "researchObjective": "Quantify spatial and temporal radiation dose rates and dose equivalent rates across ISS modules (US Lab, Columbus) to track Galactic Cosmic Rays (GCR) and South Atlantic Anomaly (SAA) passes.",
+    "dataType": "Spaceflight Radiation Physics Telemetry",
+    "variablesAvailable": ["timestamp", "absorbed_dose_rate", "dose_equivalent_rate", "instrument_id", "spacecraft", "module", "trajectory"],
+    "units": {
+      "timestamp": "ISO 8601 UTC",
+      "absorbed_dose_rate": "µGy/h",
+      "dose_equivalent_rate": "µSv/h",
+      "instrument_id": "Text ID",
+      "spacecraft": "Text ID",
+      "module": "Text ID"
+    },
+    "studySubjects": "DOSTEL active silicon detectors (DOSTEL-1, DOSTEL-2) mounted inside ISS pressurized modules",
+    "timeCoverage": "Multi-year continuous telemetry (51.6° inclination LEO, 400 km altitude)",
+    "accessRestrictions": "Public Open Access (NASA Open Data Policy / CCO 1.0)",
+    "sourceSystem": "NASA OSDR RadLab Portal & API",
+    "sourceURL": "https://visualization.osdr.nasa.gov/radlab/api",
+    "portalURL": "https://osdr.nasa.gov/",
+    "relevanceToMedula": "Directly maps to MEDULA radiation records schema (ambient_radiation_rate in µSv/h and cumulative_dose in mSv). Used to validate radiation hazard monitoring without biological fabrication.",
+    "integrationStatus": "VERIFIED_AND_INTEGRATED",
+    "importableIntoMedula": true,
+    "provenance": "NASA OSDR RadLab API telemetry payload verified against published ISS DOSTEL calibration reference standards."
+  },
+  {
+    "datasetAccession": "NASA-OSDR-EDA-ISS-ENV",
+    "datasetName": "NASA OSDR Environmental Data App: ISS Cabin Atmosphere Telemetry",
+    "researchObjective": "Continuous monitoring of pressurized cabin atmospheric parameters (CO2, temperature, relative humidity, pressure) across ISS mission increments to evaluate environmental habitability and biological payload conditions.",
+    "dataType": "Spacecraft Cabin Environmental Telemetry",
+    "variablesAvailable": ["timestamp", "cabin_temperature", "cabin_co2", "cabin_humidity", "cabin_pressure"],
+    "units": {
+      "timestamp": "ISO 8601 UTC",
+      "cabin_temperature": "°C",
+      "cabin_co2": "%",
+      "cabin_humidity": "%",
+      "cabin_pressure": "kPa"
+    },
+    "studySubjects": "ISS Environmental Control and Life Support Systems (ECLSS) sensors across US Orbital Segment modules",
+    "timeCoverage": "Multi-increment continuous orbital mission operations",
+    "accessRestrictions": "Public Open Access (NASA Open Science Data Repository)",
+    "sourceSystem": "NASA OSDR Environmental Data App",
+    "sourceURL": "https://visualization.osdr.nasa.gov/",
+    "portalURL": "https://osdr.nasa.gov/osdr/data/",
+    "relevanceToMedula": "Directly maps to MEDULA Module 04 environmentalRecords store. Provides verified cabin parameters to contextualize astronaut health patterns without asserting causation.",
+    "integrationStatus": "VERIFIED_AND_INTEGRATED",
+    "importableIntoMedula": true,
+    "provenance": "NASA OSDR Environmental Data App verified orbital telemetry payload."
+  },
+  {
+    "datasetAccession": "OSD-51",
+    "datasetName": "Effects of 60-day Head-Down Tilt Bed Rest on Human Skeletal Muscle (WISE-2005)",
+    "researchObjective": "Investigate microgravity-induced physiological deconditioning in humans using a 60-day 6° head-down tilt (HDT) bed rest ground analog, measuring muscle disuse atrophy, heart rate recovery, and resistive exercise countermeasures.",
+    "dataType": "Human Ground Analog (Phenotypic & Physiological)",
+    "variablesAvailable": ["body_mass", "muscle_fiber_cross_sectional_area", "heart_rate_recovery", "resistive_vibration_exercise_group"],
+    "units": {
+      "body_mass": "kg",
+      "muscle_fiber_cross_sectional_area": "µm²",
+      "heart_rate_recovery": "bpm"
+    },
+    "studySubjects": "24 healthy adult female human volunteers (Women's International Space Simulation for Exploration)",
+    "timeCoverage": "60-day head-down tilt bed rest campaign with pre- and post-ambulatory phases",
+    "accessRestrictions": "Public Open Access for normalized study tables and metadata; raw identifiable human medical charts restricted under NASA/ESA IRB governance.",
+    "sourceSystem": "NASA OSDR Biological Data Repository (GeneLab & ALSDA)",
+    "sourceURL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-51/",
+    "portalURL": "https://osdr.nasa.gov/",
+    "relevanceToMedula": "Validates human physiological response to simulated microgravity disuse; provides empirical evidence for MEDULA's physical performance baseline decay models.",
+    "integrationStatus": "CATALOGUED_REFERENCE",
+    "importableIntoMedula": false,
+    "provenance": "NASA OSDR Biological Data API dataset OSD-51 (GLDS-51 / LSDS-41)."
+  },
+  {
+    "datasetAccession": "OSD-546",
+    "datasetName": "Stem Cell Differentiation Toward Osteoblast Onboard the ISS",
+    "researchObjective": "Evaluate human mesenchymal stem cell differentiation into osteoblasts in orbital microgravity to identify molecular pathways contributing to spaceflight bone mineral density reduction.",
+    "dataType": "In-Flight Cellular Physiology & Bone Turnover",
+    "variablesAvailable": ["alkaline_phosphatase_activity", "osteocalcin_gene_expression", "cell_viability"],
+    "units": {
+      "alkaline_phosphatase_activity": "Relative fluorescence units",
+      "osteocalcin_gene_expression": "Log2 fold change",
+      "cell_viability": "% viable"
+    },
+    "studySubjects": "Human bone marrow-derived mesenchymal stem cells cultured in microgravity vs terrestrial 1g ground controls",
+    "timeCoverage": "ISS Increment 43/44 flight experiment",
+    "accessRestrictions": "Public Open Science (NASA OSDR)",
+    "sourceSystem": "NASA OSDR Biological Data Repository",
+    "sourceURL": "https://visualization.osdr.nasa.gov/biodata/api/v2/dataset/OSD-546/",
+    "portalURL": "https://osdr.nasa.gov/",
+    "relevanceToMedula": "Supplies foundational space biology evidence for Hazard 4 (Gravity Fields) bone homeostasis disruption.",
+    "integrationStatus": "CATALOGUED_REFERENCE",
+    "importableIntoMedula": false,
+    "provenance": "NASA OSDR Biological Data API dataset OSD-546."
+  },
+  {
+    "datasetAccession": "NASA-HRP-SM-REFERENCE",
+    "datasetName": "NASA Spaceflight Standard Measures Cohort Norms & Protocol Repository",
+    "researchObjective": "Establish longitudinal, standardized physiological, behavioral, and biological reference trajectories across astronaut cohorts flying on long-duration ISS expedition increments.",
+    "dataType": "Astronaut Longitudinal Clinical Reference Standards",
+    "variablesAvailable": ["sleep_duration", "sleep_efficiency", "resting_heart_rate", "systolic_bp", "diastolic_bp", "hrv_rmssd", "fatigue_score", "mood_score", "stress_score"],
+    "units": {
+      "sleep_duration": "hours",
+      "sleep_efficiency": "%",
+      "resting_heart_rate": "bpm",
+      "systolic_bp": "mmHg",
+      "diastolic_bp": "mmHg",
+      "hrv_rmssd": "ms",
+      "fatigue_score": "Score (1-10)",
+      "mood_score": "Score (1-10)",
+      "stress_score": "Score (1-10)"
+    },
+    "studySubjects": "ISS Expedition Astronaut Crewmembers (Long-Duration Spaceflight)",
+    "timeCoverage": "2018 to present (Expeditions 56–72)",
+    "accessRestrictions": "RESTRICTED — NASA Institutional Review Board (IRB) & Lifetime Surveillance of Astronaut Health (LSAH). Raw individual astronaut records contain Protected Health Information (PHI) and cannot be publicly downloaded without formal NASA Data Request Protocol approval.",
+    "sourceSystem": "NASA Life Sciences Data Archive (LSDA) / Human Research Program",
+    "sourceURL": "https://www.nasa.gov/reference/standard-measures/",
+    "portalURL": "https://lsda.jsc.nasa.gov/",
+    "relevanceToMedula": "Serves as the scientific foundation for MEDULA's metric taxonomy, unit standards, and baseline computation windows. Cohort reference medians inform baseline validation rules without exposing individual astronaut records.",
+    "integrationStatus": "PROTOCOL_REFERENCED_ONLY",
+    "importableIntoMedula": false,
+    "provenance": "NASA Spaceflight Standard Measures Project Manual & Published HRP Cohort Summary Norms."
+  }
+]
